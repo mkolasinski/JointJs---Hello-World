@@ -7,43 +7,12 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" type="text/css" href="../node_modules/jointjs/dist/joint.css"/>
-  <script src="../node_modules/jointjs/dist/joint.min.js"></script>
-  <script src="../node_modules/jquery/dist/jquery.js"></script>
-  <script src="../node_modules/backbone/backbone.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="../node_modules/jointjs/dist/joint.css"/>-->
+  <!--<script src="../node_modules/jointjs/dist/joint.min.js"></script>-->
+  <!--<script src="../node_modules/jquery/dist/jquery.js"></script>-->
+  <!--<script src="../node_modules/backbone/backbone.js"></script>-->
 </head>
 <body>
 <app-root></app-root>
-<div id="joint"></div>
-<script type="text/javascript">
-
-
-    var graph = new joint.dia.Graph();
-
-    var paper = new joint.dia.Paper({
-      el: $('#joint'),
-      height: 200,
-      width: 600,
-      model: graph,
-      gridSize: 1
-    });
-
-    var rect = new joint.shapes.basic.Rect({
-      position: {x: 100, y: 30},
-      size: {width: 100, height: 30},
-      attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
-    });
-
-    var rect2 = rect.clone();
-    rect2.translate(300);
-
-    var link = new joint.dia.Link({
-      source: {id: rect.id},
-      target: {id: rect2.id}
-    });
-
-    graph.addCells([rect, rect2, link]);
-
-</script>
 </body>
 </html>
