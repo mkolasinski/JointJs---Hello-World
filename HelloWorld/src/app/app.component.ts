@@ -51,6 +51,7 @@ export class AppComponent implements OnInit {
     });
 
     this.graph.addCells([rect, rect2, link]);
+
   }
 }
 
