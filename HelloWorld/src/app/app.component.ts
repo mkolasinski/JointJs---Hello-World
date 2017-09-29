@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     this.paper = new joint.dia.Paper({
       el: $('#myholder'),
       width: 600,
-      height: 200,
+      height: 400,
       model: this.graph,
       gridSize: 1
     });
@@ -33,18 +33,17 @@ export class AppComponent implements OnInit {
     let rect = new joint.shapes.basic.Rect({
       position: {x: 100, y: 30},
       size: {width: 100, height: 30},
-      attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
+      attrs: {rect: {fill: '#1C9065'}, text: {text: 'first box', fill: 'white'}}
     });
 
-    let rect2 = rect.clone() ;
-      rect2.translate(300);
+    // let rect2 = rect.clone() ;
+    //   rect2.translate(300);
 
-    // let rect2 = new joint.shapes.basic.Rect({
-      // position: {x: 250, y: 230},
-      // size: {width: 100, height: 30},
-      // attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
-
-    // });
+    let rect2 = new joint.shapes.basic.Rect({
+      position: {x: 250, y: 230},
+      size: {width: 100, height: 30},
+      attrs: {rect: {fill: '#AC2323'}, text: {text: 'second box', fill: 'white'}}
+    });
 
     let link = new joint.dia.Link({
       source: {id: rect.id},
