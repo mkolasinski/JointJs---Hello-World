@@ -36,11 +36,15 @@ export class AppComponent implements OnInit {
       attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
     });
 
-    let rect2 = new joint.shapes.basic.Rect({
-      position: {x: 250, y: 230},
-      size: {width: 100, height: 30},
-      attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
-    });
+    let rect2 = rect.clone() ;
+      rect2.translate(300);
+
+    // let rect2 = new joint.shapes.basic.Rect({
+      // position: {x: 250, y: 230},
+      // size: {width: 100, height: 30},
+      // attrs: {rect: {fill: 'blue'}, text: {text: 'my box', fill: 'white'}}
+
+    // });
 
     let link = new joint.dia.Link({
       source: {id: rect.id},
