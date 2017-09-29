@@ -1,5 +1,5 @@
 div#myholder {
-  margin: auto;
+  margin: 8% auto auto;
   border:2px solid black;
   box-shadow:3px 3px 3px grey;
   background-image: linear-gradient(to bottom right, darkgrey, white);
