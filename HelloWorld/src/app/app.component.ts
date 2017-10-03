@@ -1,8 +1,6 @@
 import * as $ from 'jquery';
 import * as joint from 'jointjs';
-// const joint = require('jointjs/dist/joint.js');
 
-// import {ngOnInit} from '@angular/core';
 import {Component, OnInit} from '@angular/core';
 
 
